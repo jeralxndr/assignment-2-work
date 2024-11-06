@@ -22,19 +22,39 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house"></i> Home</a>
+        <% if (title == "Home") { %>
+          <a class="nav-link active" aria-current="page" href="/home">
+          <% } else { %>
+          <a class="nav-link" aria-current="page" href="/home">
+          <% } %>
+          <i class="fa-solid fa-house"></i> Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/about"><i class="fa-solid fa-address-card"></i> About</a>
+        <% if (title == "About") { %>
+          <a class="nav-link active" aria-current="page" href="/about">
+          <% } else { %>
+          <a class="nav-link" aria-current="page" href="/about">
+          <% } %>
+          <i class="fa-solid fa-address-card"></i> About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/projects"><i class="fa-solid fa-briefcase"></i> Projects</a>
+        <% if (title == "Projects") { %>
+          <a class="nav-link active" aria-current="page" href="/projects">
+          <% } else { %>
+          <a class="nav-link" aria-current="page" href="/projects">
+          <% } %>
+          <i class="fa-solid fa-briefcase"></i> Projects</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+          <% if (title == "Contact") { %>
+          <a class="nav-link active" aria-current="page" href="/contact">
+          <% } else { %>
+          <a class="nav-link" aria-current="page" href="/contact">
+          <% } %>
+          <i class="fa-solid fa-envelope"></i> Contact</a>
         </li>
 
     </div>
@@ -48,7 +68,11 @@
   </div>
 </div>
 </main>
-<!-- Content-->
+<!-- Footer-->
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="a">Fixed bottom</a>
+  </nav>
+<!-- Scripts-->
   <script src = "/scripts/app.js"></script>
   <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/jquery/dist/jquery.min.js"/></script>
