@@ -4,21 +4,21 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    title: 'Welcome to my site!',
+    title: 'Home',
    });
 });
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
   res.render('index', { 
-    title: 'Welcome to my site!',
+    title: 'Home',
    });
 });
 
 /* GET projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('index', { 
-    title: 'My Projects',
+    title: 'Projects',
    });
 });
 
@@ -32,7 +32,7 @@ router.get('/about', function(req, res, next) {
 /* GET contacts page. */
 router.get('/contact', function(req, res, next) {
   res.render('index', { 
-    title: 'Contact Me',
+    title: 'Contact',
    });
 });
 
